@@ -1,0 +1,38 @@
+// IMPORT THE Font Awesome
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+@use "plugin/_bsnav.min.scss";
+
+//IMPORT CUSTOM FONT
+@use "../webfonts/poppins";
+@use "../webfonts/quicksand";
+
+//IMPORT CUSTOM BOOTSTRAP
+@use "custom";
+
+//IMPORT BASE
+@use "base/reset";
+@use "base/animations";
+@use "base/typography";
+
+//IMPORT LAYOUT
+@use "layout/section";
+@use "layout/forms";
+
+// IMPORT THE COMPONENTS
+// @use "components/burgermenu";
+@use "components/buttons";
+
+@media (min-width: 1400px) {
+	.container-xxl,
+	.container-xl,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container {
+		max-width: 90%;
+	}
+}

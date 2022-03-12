@@ -1,0 +1,114 @@
+@use "../config/_variable.scss" as *;
+
+label {
+	font-weight: 400;
+
+	@media only screen and (max-width: 1199.98px) {
+		font-size: 15px;
+	}
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+/*-----------------------------------------
+//////////////// FORM SETUP ///////////////
+-----------------------------------------*/
+.form-control-costum {
+	height: 39px;
+	width: 100%;
+	padding: 12px 24px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	font-size: 14px;
+	transition: 0.4s ease;
+
+	&:focus {
+		border: 1px solid $primary;
+		box-shadow: none;
+		outline: none;
+	}
+}
+/*-----------------------------------------
+//////////////////////////////// FORM SETUP
+-----------------------------------------*/
+
+/*-----------------------------------------
+////////// SPINNER FORM SETUP /////////////
+-----------------------------------------*/
+.spinner {
+	&__btn-left,
+	&__btn-right {
+		width: 32px;
+		height: 32px;
+		border-radius: 4px !important;
+		background-color: $gray-100;
+		border: 1px solid $gray-100;
+		color: $dark-navy;
+		padding: 0px;
+		transition: 0.4s ease;
+		&:hover {
+			background-color: $gray-200;
+			border: 1px solid $gray-200;
+			color: $dark-navy;
+		}
+	}
+
+	&__btn-left {
+		margin-right: 8px;
+		&.dis {
+			background-color: $gray-100;
+			border-color: $gray-100;
+		}
+		&.dis.del {
+			background-color: $pink;
+			color: $white !important;
+		}
+	}
+
+	&__btn-right {
+		margin-left: 8px !important;
+	}
+
+	&__input {
+		text-align: center;
+		height: 32px;
+		width: 50px !important;
+		padding: 0;
+		border-radius: 4px !important;
+		box-sizing: border-box;
+		font-size: 14px;
+		transition: 0.4s ease;
+		border: none;
+		&:focus {
+			border: 1px solid $primary;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+
+	@media only screen and (max-width: 1199.98px) {
+		&__input {
+			border-radius: 4px !important;
+		}
+
+		&__btn-left {
+			margin-right: 12px !important;
+		}
+		&__btn-right {
+			margin-left: 12px !important;
+		}
+	}
+}
+/*-----------------------------------------
+//////////////////////// SPINNER FORM SETUP
+-----------------------------------------*/

@@ -1,0 +1,26 @@
+@use "../../config/mixin" as *;
+@use "../../config/variable" as *;
+.card-shadow {
+	padding: 16px;
+	border-radius: 18px;
+	box-shadow: 1px 1px 17px -13px rgba(0, 0, 0, 0.75);
+	background-color: $white;
+
+	&__title {
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		span {
+			text-transform: capitalize;
+			font-size: 16px;
+			letter-spacing: 0px;
+			color: $gray-400;
+		}
+	}
+
+	&__footer {
+		padding-top: 16px;
+		border-top: 1px solid $gray-300;
+	}
+}

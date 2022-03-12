@@ -1,0 +1,7 @@
+@use "../../config/variable" as *;
+.tab-nav {
+	.nav-link {
+		padding: 8px 32px;
+		border-radius: 20px;
+	}
+}

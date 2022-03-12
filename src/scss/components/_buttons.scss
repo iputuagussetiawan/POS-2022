@@ -1,0 +1,18 @@
+@use "../config/variable" as *;
+
+.btn {
+	border-radius: 8px;
+}
+
+.btn-danger.soft {
+	color: $pink;
+	background-color: $pink-100;
+	border-color: $pink-100;
+
+	circle {
+		stroke: $pink;
+	}
+	path {
+		fill: $pink;
+	}
+}
