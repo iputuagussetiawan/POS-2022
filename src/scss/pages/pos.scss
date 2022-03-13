@@ -4,6 +4,8 @@
 @use "../components/tab/tab-nav" as *;
 @use "../components/cards/card-food" as *;
 @use "../components/cards/card-shadow" as *;
+@use "../components/cards/card-customer" as *;
+@use "../components/radio-button/radio-button" as *;
 
 .pos {
 	&__inner {
@@ -79,6 +81,13 @@
 	margin-bottom: 24px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+}
+.customers-list {
+	margin-bottom: 24px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 16px;
 	gap: 16px;
 }
 .cashier {
@@ -196,6 +205,7 @@
 		margin-bottom: 16px;
 	}
 	&__label {
+		margin-bottom: 0px;
 		font-weight: 500;
 		font-size: 18px;
 	}
@@ -211,5 +221,23 @@
 	&__value-total {
 		font-weight: 700;
 		font-size: 20px;
+	}
+}
+
+.cashless {
+	margin-bottom: 24px;
+	&__info-container {
+	}
+	&__action-container {
+	}
+	&__title {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&__value {
+		font-size: 27px;
+		font-weight: 700;
+		color: $primary;
 	}
 }

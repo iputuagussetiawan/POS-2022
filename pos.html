@@ -64,7 +64,10 @@
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <h2>All Item</h2>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control form-control-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
                         <div class="product-list">
                             <div class="card-food">
                                 <div class="card-food__header">
@@ -249,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="card-shadow">
+                    <div class="card-shadow mb-4">
                         <div class="card-shadow__body">
                             <div class="summery-cart">
                                 <div class="summery-cart__item">
@@ -270,14 +273,177 @@
                         <div class="card-shadow__footer">
                             <div class="summery-cart__item">
                                 <label for="" class="summery-cart__label-total">Total</label>
-                                <div class="summery-cart__value-total">120.000</div>
+                                <div class="summery-cart__value-total">IDR 120.000</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-shadow mb-4">
+                        <div class="card-shadow__body">
+                            <div class="cashless">
+                                <div class="cashless__info-container">
+                                    <h3 class="cashless__title">Payment Method</h3>
+                                    <label>
+                                        <input type="radio" name="payment-method" checked/>
+                                        <span>Cash</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment-method"/>
+                                        <span>Credit</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment-method"/>
+                                        <span>Tranfer</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="cashless">
+                                <div class="cashless__info-container">
+                                    <h3 class="cashless__title">Customer</h3>
+                                </div>
+                               
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Select Customer
+                                    </button>
+                              
+                            </div>
+                            <div class="cashless">
+                                <div class="cashless__info-container">
+                                    <h3 class="cashless__title">Total Payment</h3>
+                                    <p class="cashless__value">IDR 80.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-lg btn-primary">Pay Now</button>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Button trigger modal -->
+   
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Customer List</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control form-control-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="customers-list">
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-customer">
+                        <div class="card-customer__image-container">
+                            <img src="./src/images/team/team-2-9.jpg" alt="customer">
+                        </div>
+                        <div class="card-customer__info-container">
+                            <h3 class="card-customer__name">Yura</h3>
+                            <span href="tel:6281772234" class="card-customer__phone">+628122334455</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
     <script src="build/app.js"></script>
 </body>
 </html>

@@ -20367,7 +20367,7 @@ input[type=number] {
 /*-----------------------------------------
 //////////////// FORM SETUP ///////////////
 -----------------------------------------*/
-.form-control-costum {
+.form-control-custom {
   height: 39px;
   width: 100%;
   padding: 12px 24px;
@@ -20378,7 +20378,7 @@ input[type=number] {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
-.form-control-costum:focus {
+.form-control-custom:focus {
   border: 1px solid #f07613;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -20469,6 +20469,14 @@ input[type=number] {
 }
 .btn-danger.soft path {
   fill: #ed5575;
+}
+
+.btn-primary {
+  color: #fff;
+  border-radius: 100px;
+}
+.btn-primary:hover {
+  color: #fff;
 }
 
 @media (min-width: 1400px) {

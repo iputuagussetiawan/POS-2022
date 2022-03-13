@@ -4,9 +4,29 @@
 .card-food {
 	//background-color: salmon;
 	@include imageRatio(70, 53, true, cover);
+	position: relative;
 	border: 1px solid $gray-200;
-	border-radius: 18px;
+	border-radius: 16px;
 	padding: 8px;
+	overflow: hidden;
+	transition: 0.4s ease;
+
+	&:hover {
+		border-color: $primary;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -8px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 11px;
+		height: 50%;
+		background-color: $primary;
+		border-radius: 10px;
+		z-index: 1;
+	}
 
 	&__title {
 		margin-bottom: 4px;
@@ -14,6 +34,7 @@
 		font-weight: 700;
 	}
 	&__weight {
+		margin-bottom: 4px;
 		font-size: 16px;
 		color: $gray-400;
 	}
