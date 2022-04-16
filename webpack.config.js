@@ -13,6 +13,7 @@ const entry = {
 	app: JS_DIR + '/app.js',
 	home: JS_DIR + '/pages/home.js',
 	pos: JS_DIR + '/pages/pos.js',
+	login: JS_DIR + '/pages/login.js',
 	//editor: JS_DIR + '/editor.js',
 };
 // Declaration Output Assets

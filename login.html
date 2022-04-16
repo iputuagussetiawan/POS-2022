@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Food Order</title>
+    <link rel="stylesheet" href="build/app.css" />
+    <link rel="stylesheet" href="build/login.css" />
+</head>
+<body>
+    <section class="login section-padding">
+        <div class="container">
+            <div class="row g-0 login__inner">
+                <div class="col-md-5 login__sidebar">
+                    <div class="login__sidebar-header">
+                        <div class="login__logo-container">
+                            <img src="./src/images/logo/logo.png" alt="logo">
+                        </div>
+                        <h3 class="login__title">Welcome</h3>
+                        <p class="login__subtitle">Login With Your Credential</p>
+                    </div>
+                   
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-custom" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-custom" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="login__link">Forgot Password ?</a>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                    </form>
+                </div>
+                <div class="col-md-7 login__content" style="background-image: url('./src/images/background/food.jpg');">
+                   <!-- <div class="login__background-container">
+                       <img src="./src/images/background/food.jpg" alt="food" class="img-fluid">
+                   </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="build/login.js"></script>
+</body>
+</html>
