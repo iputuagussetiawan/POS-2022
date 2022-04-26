@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Point Of Sale</title>
+        <link rel="icon" type="image/png" href="assets/images/myicon.png" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+      <div id="app">
+        <ol>
+          <li v-for="name in names">{{ name }}</li>
+        </ol>
+    
+        <ul>
+          <li v-for="fruit in fruits">{{ fruit.name }} {{ fruit.color }} {{  fruit.weight  }}</li>
+        </ul>
+       </div>
+
+      <script src="app.js"></script>
+      <script>
+        let app = new Vue({
+         el: '#app',
+         data:{
+           names: ['Iputu Agus','Dewi','Jhon','Mia','Doe','Luna','Jhen'],
+           fruits:[
+             {
+               name:'Mango',
+               color:'Yellow',
+               weight:'1KG'
+             },
+             {
+               name:'Orange',
+               colo:'Orange',
+               weight:'1KG'
+             },
+             {
+               name:'Apple',
+               color:'Green',
+               weight:'1KG'
+             },
+           ]
+         },
+         methods: {
+           
+         },
+       })
+       </script>
+   </body>
+</html>
