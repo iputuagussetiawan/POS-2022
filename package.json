@@ -5,7 +5,7 @@
   "description": "A collection of different Webpack setups for quick referencing or starting from",
   "scripts": {
     "start": "NODE_ENV=production webpack",
-    "build": "NODE_ENV=production webpack",
+    "build": "npm install NODE_ENV=production webpack",
     "watch": "webpack --watch",
     "prod": "NODE_ENV=production webpack",
     "dev": "webpack"
